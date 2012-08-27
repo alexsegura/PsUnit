@@ -24,6 +24,9 @@ and [Mockery](https://github.com/padraic/mockery) installed via PEAR.
 Running the test suite
 ----------------------
 
+Edit the bootstrap.php file to specify the installation directory of PrestaShop. 
+By default it should be located in ../prestashop. 
+
 In the PsUnit directory, execute the command below
 
 ```
