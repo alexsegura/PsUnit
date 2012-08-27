@@ -13,3 +13,4 @@ $loader->register();
 require_once PRESTASHOP_PATH . '/config/autoload.php';
 
 require_once 'classes/PsUnit/MockUtils.php';
+require_once 'classes/PsUnit/ReflectionUtils.php';
