@@ -2,18 +2,22 @@
 
 class PsUnit_MockUtils {
 	
+	/**
+	 * Mocks the Configuration :: get() method to return predefined values.
+	 * @param array $config - configuration keys/values  
+	 */
 	public static function mockConfiguration($config = array()) {
-		
-		// We mock the Configuration class & its public static methods
 		$mock = \Mockery :: mock('alias:Configuration');
-		
-		// Configuration :: get() will return the configured values
 		foreach ($config as $key => $value) {
 			$mock->shouldReceive('get')->with($key)->andReturn($value);
 		}
 		
 	}
 	
+	/**
+	 * "Mocks" the Context by filling the singleton by reference. 
+	 * @param array $vars - keys/values to inject in the Context instance
+	 */
 	public static function mockContext($vars = array()) {
 		
 		// We can't mock the Context class
