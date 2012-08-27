@@ -1,7 +1,7 @@
 <?php
 
 if (!defined('PRESTASHOP_PATH')) {
-	define('PRESTASHOP_PATH', '/home/alex/workspace/deejayland');
+	define('PRESTASHOP_PATH', '../prestashop');
 }
 
 require_once 'Mockery/Loader.php';
